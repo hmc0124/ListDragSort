@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>AliExpress is one year old</title>
+<meta name="keywords" content="AliExpress is one year old" />
+<meta name="description" content="AliExpress is one year old" />
+
+<link rel="stylesheet" type="text/css" href="http://style.alibaba.com/css/4v/wholesale/buyer/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="http://style.alibaba.com/css/4v/wholesale/buyer/common.css" media="screen" />
+<script src="http://style.alibaba.com/js/5v/lib/ae/ae.js"></script>
+<script src="http://style.alibaba.com/js/5v/util/animation.js"></script>
+<body>
+<style>
+#wrapper{position:relative;width:500px;margin:20px auto;}
+.drag-item{position:relative;}
+.drag-item li{width:80px;padding:5px;border:1px solid #ccc;zoom:1;
+	margin:5px;float:left;text-align:center;cursor:pointer;
+	position:relative;left:0;top:0;background:#fff;}
+.drag-item li img{width:80px;height:80px;}
+.drag-item li strong{margin:5px;display:inline-block;}
+.drag-item .current{z-index:2;}
+.drag-item li.moving{z-index:2;cursor:move;}
+.drag-item #placeholder{position:absolute;border:10px solid #ccc;opacity:0.3;
+margin:0;height:75px;z-index:-1;width:62px;left:5px;_left:10px;top:5px;background:#fff;filter: Alpha(opacity=30); }
+.item-clone{z-index:10;position:absolute;}
+.item-clone li{margin:0;}
+</style>
+<div id="wrapper">
+	<ul id="list" class="drag-item clearfix">
+		<li>
+			<strong>1</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png"  />
+		</li>
+		<li>
+			<strong>2</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>3</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>4</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>5</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>6</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>7</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>8</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>9</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>10</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>11</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>12</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>13</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+		<li>
+			<strong>14</strong>
+			<img src="http://i02.i.aliimg.com/images/cms/upload/albert/network/149x130_110321_networking.png" />
+		</li>
+	</ul>
+</div>
+<script src="dragsort.js"></script>
+<script>
+YUE.onDOMReady(function(){
+	var ds = AE.app.dragSort;
+	ds.init({
+		wrapper : 'wrapper',
+		itemContainer : 'list',
+		getOrder : function(){
+			return this.container;
+		}
+	});
+});
+
+</script>
+
+</body>
+</html>
